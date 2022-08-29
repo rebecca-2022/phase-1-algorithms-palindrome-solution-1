@@ -1,41 +1,31 @@
+function reverse(word) {
+  //const wordArray = word.split("");
+  //const reversedWordArray = wordArray.reverse();
+  //const reversedWord = reversedWordArray.join("");
+  //return reversedWord;
+  return word.split("").reverse().join("");
+}
+
+
+
+
 function isPalindrome(word) {
   // Write your algorithm here
-  function reverse(word) {
-    const wordArray = word.split("");
-    const reversedWordArray = wordArray.reverse();
-    const reversedWord = reversedWordArray.join("");
-    return reversedWord;
-  }
-  
-  function isPalindrome(word) {
-    // Write your algorithm here
-    const reversedWord = reverse(word)
-    if(word === reversedWord){
-      return true;
-    }else{
-      return false;
-    }
-    return reversedWord
-  }
-  
-  /* 
-    Add your pseudocode here
-    function that return reversed word
-    conditional statement that check if the word is the same as the reversed
-  */
-  
-  /*
-    Add written explanation of your solution here
-    i need to write a function that returns a string in a reversed order
-    i need to check if the reversed string is same the passed strng, i return true.
-  */
-  
-  // You can run `node index.js` to view these console logs
-  
+
+  const reversedWord = reverse(word)
+
+  return word === reversedWord;
+
 }
 
 /* 
   Add your pseudocode here
+  that means if the word is the same as the word in reverse,I should return true.
+  reverse the input string
+  if the input is same as the reversed input
+  return true
+  else
+  return false
 */
 
 /*
@@ -55,3 +45,4 @@ if (require.main === module) {
 }
 
 module.exports = isPalindrome;
+
